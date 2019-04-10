@@ -1,0 +1,24 @@
+#Base include
+include device/generic/x86_64/BoardConfig.mk
+
+#For building Intel Android HWComposer
+INTEL_MINIGBM := external/minigbm
+BOARD_USES_MINIGBM := true
+BOARD_USES_GRALLOC1 := true
+BOARD_USES_IA_HWCOMPOSER := true
+BOARD_USES_DRM_HWCOMPOSER := false
+BOARD_USES_DRM_GRALLOC := false
+TARGET_USES_HWC2 := true
+TARGET_BOARD_PLATFORM := android_x86_64
+LIBDRM_VER := intel
+ENABLE_EXPLICIT_SYNC := true
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+INTEL_VA := false
+BOARD_USE_MESA := true
+BOARD_GRAPHIC_IS_GEN := true
+DISABLE_MEDIA_COMPOSITOR := true
+USE_OPENGL_RENDERER := true
+#Misc.
+BOARD_HAVE_BLUETOOTH := false
+BOARD_WPA_SUPPLICANT_DRIVER := false
+
