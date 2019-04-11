@@ -24,6 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.hwcomposer=$(TARGET_BOARD_PLATFORM) \
 
 PRODUCT_PACKAGES += \
+    F-DroidPrivilegedExtension \
     gralloc.android_x86_64 \
     hwcomposer.android_x86_64
 
